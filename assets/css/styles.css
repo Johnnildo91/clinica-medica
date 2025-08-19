@@ -2,15 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 body{
     font-family: Source Sans Pro, sans-serif;
-    background-color: #f4f4f4;
 }
-.container{
-    width: 80%;
+section{
+    margin: 50px 0;
+}
+h3{
+    margin: 20px 0;
+}
+.container, .hero-conteudo{
+    max-width: 1024px;
     margin: 0 auto;
 }
-.container-info{
+.container-info, .container-info-lista{
     text-align: center;
+    color: #0000008c;
+    margin: 50px 0;
+}
+/* Header */
+.topo{
+    background-color: #5be1f3;
+}
+.imagem-logo{
+    width: 150px;
+    height: auto;
+}
+img{
+    width: 100%;
+}
+.container-topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu ul li a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.menu ul li a:hover{
+    color: #000;
+}
+/* Hero */
+.hero{
+    background-image: url('/assets/imagens/recepcao.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.hero-conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 200;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* Sobre */
+.container-info-itens{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.container-info-lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.imagem-medico{
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+}
+.container-info-lista ul{
+    text-align: left;
 }
