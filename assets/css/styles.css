@@ -7,27 +7,26 @@
 body{
     font-family: Source Sans Pro, sans-serif;
 }
-section{
-    margin: 50px 0;
-}
-h3{
-    margin: 20px 0;
+h2, h3{
+    margin-bottom: 20px;
 }
 .container, .hero-conteudo{
     max-width: 1024px;
     margin: 0 auto;
 }
 .container-info, .container-info-lista{
+    font-size: 1.2rem;
     text-align: center;
     color: #0000008c;
-    margin: 50px 0;
+    margin: 50px auto;
+    line-height: 1.5rem;
 }
 /* Header */
 .topo{
     background-color: #5be1f3;
 }
 .imagem-logo{
-    width: 150px;
+    width: 120px;
     height: auto;
 }
 img{
@@ -61,13 +60,16 @@ img{
 }
 .hero-conteudo{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     height: 100%;
     color: #fff;
     font-size: 2rem;
-    font-weight: 200;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-conteudo h1, .hero-conteudo h2{
+    font-weight: normal;
 }
 /* Sobre */
 .container-info-itens{
@@ -81,10 +83,43 @@ img{
     justify-content: flex-start;
 }
 .imagem-medico{
-    width: 300px;
+    width: 250px;
     height: auto;
     margin-right: 20px;
 }
 .container-info-lista ul{
     text-align: left;
+}
+/* Especialidades */
+.container-imagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+figure{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    color: #0000008c;
+    padding: 10px 0;
+}
+.botao-especialidades{
+    background-color: #5be1f3;
+    border: none;
+    margin: 0 auto; 
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: Source Sans Pro, sans-serif;
+}
+.botao-especialidades a{
+    color: #fff;  
 }
