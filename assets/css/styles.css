@@ -15,7 +15,7 @@ h2, h3{
     margin: 0 auto;
 }
 .container-info, .container-info-lista{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     color: #0000008c;
     margin: 50px auto;
@@ -76,11 +76,18 @@ img{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 .container-info-lista{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+.titulo-lista-info h3{
+    text-align: center;
+    margin-bottom: 0px;
 }
 .imagem-medico{
     width: 250px;
@@ -141,4 +148,54 @@ iframe{
 .rodape .container-info{
     margin-bottom: 0px;
     padding: 20px 0;
+}
+@media (max-width: 425px){
+    h1, h2, h3, p, li{
+        font-size: 1.2rem;
+    }
+    .container-info-lista ul{
+    width: 90%;
+    }
+   .menu {
+        border-top: #0000008c 1px solid;
+    }
+    .hero{
+        height: 200px;
+    }
+    .hero-conteudo{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px){
+    .container-topo{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .menu ul{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .container-info-itens{
+        flex-direction: column;
+        text-align: center;
+    }
+    .imagem-medico{
+        display: none;
+        margin: 0 0 20px 0;
+    }
+    .hero{
+        height: 300px;
+    }
+}
+@media (min-width: 769px) and ( max-width: 1023px){
+    .hero{
+        height: 400px;
+    }
+}
+@media (min-width: 1024px){
+    .hero{
+        height: 500px;
+    }
 }
