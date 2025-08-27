@@ -7,23 +7,21 @@
 body{
     font-family: Source Sans Pro, sans-serif;
 }
-h2{
+h2, h3{
     text-align: center;
     color: #0000008c; 
-}
-h3{
-    margin-bottom: 20px;
 }
 .container, .container-table{
     max-width: 1024px;
     margin: 0 auto;
 }
 .container-info{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     color: #0000008c;
     margin: 50px auto;
     line-height: 2.5rem;
+    max-width: 600px;
 }
 /* Header */
 .topo{
@@ -72,20 +70,38 @@ img{
 /* Especialidades */
 .container-table{
     display: flex;
+    max-width: 1024px;
+    justify-content: center;
+    font-size: 1rem;
 }
 .container-table img{
-    width: 300px;
-    height: auto;
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
 }
 .tabela-especialidades{
     width: 100%;
     border-collapse: collapse;
     text-align: left;
 }
-.tabela-especialidades:nth-of-type(1){
-    background-color: #696767;
+.tabela-especialidades tr th, .tabela-especialidades tr td{
+    padding: 10px;
 }
-.tabela-especialidades thead{
-    background-color: #5be1f3;
-    border: 1px solid #ddd;
+.tabela-especialidades tr:nth-of-type(even){
+    background-color: #ebe6e6;
+}
+.tabela-especialidades tr:nth-of-type(odd){
+    background-color: #c7c4c4;
+}
+.tabela-especialidades tr th{
+    background-color: #57ebe3;
+}
+/* Rodapé */
+.rodape{
+    background-color: #3ebba6;
+    color: #fff;
+}
+.rodape .container-info{
+    margin-bottom: 0px;
+    padding: 20px 0;
 }

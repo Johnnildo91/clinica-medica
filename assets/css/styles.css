@@ -15,7 +15,7 @@ h2, h3{
     margin: 0 auto;
 }
 .container-info, .container-info-lista{
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     color: #0000008c;
     margin: 50px auto;
@@ -88,6 +88,7 @@ img{
 .titulo-lista-info h3{
     text-align: center;
     margin-bottom: 0px;
+    color: #0000008c;
 }
 .imagem-medico{
     width: 250px;
