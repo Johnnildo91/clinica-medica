@@ -157,8 +157,8 @@ iframe{
     .container-info-lista ul{
     width: 90%;
     }
-   .menu {
-        border-top: #0000008c 1px solid;
+   .menu-lista{
+        border-top: 1px solid #d5d5d5;
     }
     .hero{
         height: 200px;
@@ -171,12 +171,10 @@ iframe{
     .container-topo{
         flex-direction: column;
         text-align: center;
-        gap: 10px;
     }
-    .menu ul{
+    .menu-lista{
         flex-direction: column;
-        gap: 10px;
-        margin-bottom: 10px;
+        margin: 10px;
     }
     .container-info-itens{
         flex-direction: column;
